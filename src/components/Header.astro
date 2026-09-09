@@ -1,0 +1,69 @@
+---
+
+---
+
+<style is:global>
+  /* Remove default browser spacing */
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(src/assets/background_alt.png);
+    background-size: cover;
+    max-width: 100%;
+    min-height: 150%;
+    background-repeat: no-repeat;
+    overflow: auto;
+  }
+</style>
+
+<!-- Main Header w/ Na -->
+<div id="container">
+  <main>
+    <header>
+      <div class="wrapper">
+        <h1 class="webtitle">Cae's Game Reviews</h1>
+        <p class="tagline">A college student's archive of game reviews.</p>
+        <nav>
+          <a href="/">Home</a>
+          <a href="/about/">About</a>
+        </nav>
+      </div>
+    </header>
+  </main>
+</div>
+
+<!--Header style -->
+<style>
+  header {
+    background-color: rgb(188, 35, 35);
+    top: 0;
+    max-width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .webtitle {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .tagline {
+    padding-top: 0;
+    margin-top: 0;
+    grid-row-start: 2;
+  }
+
+  a {
+    padding: 1rem;
+  }
+</style>
