@@ -9,27 +9,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url(/public/background_alt.png);
     background-size: cover;
     max-width: 100%;
     min-height: 150%;
     background-repeat: no-repeat;
-    overflow: auto;
   }
 </style>
 
-<!-- Main Header w/ Na -->
+<!-- Main Header w/ Nav -->
 <div id="container">
   <main>
     <header>
-      <div class="wrapper">
+      <div class="title">
         <h1 class="webtitle">Cae's Game Reviews</h1>
-        <p class="tagline">A college student's archive of game reviews.</p>
-        <nav>
-          <a href="/">Home</a>
-          <a href="/about/">About</a>
-        </nav>
+        <p class="tagline">A college student's thoughts on games.</p>
       </div>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/reviews">Reviews</a>
+      </nav>
     </header>
   </main>
 </div>
@@ -43,13 +42,14 @@
     padding: 0.5rem;
     display: flex;
     text-align: center;
-    justify-content: center;
+    position: sticky;
+    justify-content: space-between;
     align-items: center;
   }
 
-  .wrapper {
-    justify-content: center;
-    align-items: center;
+  .title {
+    justify-content: left;
+    align-items: left;
   }
 
   .webtitle {
@@ -63,7 +63,20 @@
     grid-row-start: 2;
   }
 
+  nav {
+    justify-content: right;
+    align-items: right;
+  }
+
   a {
     padding: 1rem;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size:;
+  }
+
+  a:hover {
+    color: white;
   }
 </style>
