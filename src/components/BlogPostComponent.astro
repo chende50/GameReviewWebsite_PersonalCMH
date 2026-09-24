@@ -1,0 +1,40 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  pubDate: Date;
+  tags: string[];
+}
+
+const { title, description, pubDate, tags } = Astro.props;
+
+const formattedDate = pubDate.toLocaleDateString("en-US", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+---
+
+<article class="blog-post">
+  <!-- Post Header w/ Title, tags, return, description-->
+  <header class="post-header">
+    <a href="/" class="back-link"> ← Back to Blog </a>
+
+    <div class="post-tags">
+      <!-- Maps tags from MD into a HTML element -->
+      {tags.map((tag) => <span class="tag">{tag}</span>)}
+    </div>
+
+    <h1>{title}</h1>
+    <p class="description">{description}</p>
+
+    <div class="post-meta">
+      <time>{formattedDate}</time>
+    </div>
+  </header>
+
+  <div class="post-content">
+    <!-- Slot adds contents from the MD file -->
+    <slot />
+  </div>
+</article>
