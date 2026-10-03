@@ -5,7 +5,7 @@ pubDate: 2026-10-02
 tags:
   - Gaming
   - Cats
-heroImage: "/src/assets/cat.jpg"
+heroImage: "/images/hero/cat.jpg"
 ---
 
 # Let's talk cats
