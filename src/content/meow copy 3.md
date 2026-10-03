@@ -5,7 +5,7 @@ pubDate: 2026-10-02
 tags:
   - Gaming
   - Cats
-heroImage: "/src/assets/cat.jpg"
+heroImage: "/images/hero/cat.jpg"
 ---
 
 # Let's talk cats
@@ -14,7 +14,7 @@ So this cat is super cute, see below!!!
 
 <figure>
   <img
-    src="../public/images/meow.jpg"
+    src="/image/embedded/meow.jpg"
     alt="CAT"
   />
   <figcaption>
