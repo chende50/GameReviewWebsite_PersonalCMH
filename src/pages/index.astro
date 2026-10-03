@@ -1,6 +1,7 @@
 ---
+import Layout from "../layouts/layout.astro"
 import { getCollection } from "astro:content";
-import Header from "../components/Header.astro"
+import Header from "../components/Header.astro";
 
 const posts = await getCollection("blog");
 
@@ -15,88 +16,86 @@ const recentPosts = posts
 const [featuredPost, ...otherPosts] = recentPosts;
 ---
 
-<!-- Page Header -->
-<Header />
+<Layout>
+  <!--Landing Page -->
+  <main>
 
-<!--Landing Page -->
-<main>
+    <!-- Blog Posts -->
+    {featuredPost && (
+      <section class="post-grid">
 
+        <!-- Featured Post -->
+        <a
+          href={`/blog/${featuredPost.id}`}
+          class="featured-post"
+        >
+          {featuredPost.data.heroImage && (
+            <img
+              src={featuredPost.data.heroImage}
+              alt={featuredPost.data.title}
+            />
+          )}
 
-  <!-- Blog Posts -->
-  {featuredPost && (
-    <section class="post-grid">
+          <div class="post-overlay">
 
-      <!-- Featured Post -->
-      <a
-        href={`/blog/${featuredPost.id}`}
-        class="featured-post"
-      >
-        {featuredPost.data.heroImage && (
-          <img
-            src={featuredPost.data.heroImage}
-            alt={featuredPost.data.title}
-          />
-        )}
+            <span class="date">
+              {featuredPost.data.pubDate.toLocaleDateString()}
+            </span>
 
-        <div class="post-overlay">
-
-          <span class="date">
-            {featuredPost.data.pubDate.toLocaleDateString()}
-          </span>
-
-          <!-- Tags -->
-          <div class="tags">
-            {featuredPost.data.tags.map((tag) => (
-              <span class="tag">{tag}</span>
-            ))}
-          </div>
-
-          <h2>{featuredPost.data.title}</h2>
-
-          <p>{featuredPost.data.description}</p>
-
-        </div>
-      </a>
-
-      <!-- Other Four Posts -->
-      <div class="small-posts">
-        {otherPosts.map((post) => (
-          <a
-            href={`/blog/${post.id}`}
-            class="small-post"
-          >
-            {post.data.heroImage && (
-              <img
-                src={post.data.heroImage}
-                alt={post.data.title}
-              />
-            )}
-
-            <div class="small-post-info">
-
-              <span class="date">
-                {post.data.pubDate.toLocaleDateString()}
-              </span>
-
-              <!-- Tags -->
-              <div class="tags">
-                {post.data.tags.map((tag) => (
-                  <span class="tag">{tag}</span>
-                ))}
-              </div>
-
-              <h3>{post.data.title}</h3>
-
-              <p>{post.data.description}</p>
-
+            <!-- Tags -->
+            <div class="tags">
+              {featuredPost.data.tags.map((tag) => (
+                <span class="tag">{tag}</span>
+              ))}
             </div>
-          </a>
-        ))}
-      </div>
 
-    </section>
-  )}
-</main>
+            <h2>{featuredPost.data.title}</h2>
+
+            <p>{featuredPost.data.description}</p>
+
+          </div>
+        </a>
+
+        <!-- Other Four Posts -->
+        <div class="small-posts">
+          {otherPosts.map((post) => (
+            <a
+              href={`/blog/${post.id}`}
+              class="small-post"
+            >
+              {post.data.heroImage && (
+                <img
+                  src={post.data.heroImage}
+                  alt={post.data.title}
+                />
+              )}
+
+              <div class="small-post-info">
+
+                <span class="date">
+                  {post.data.pubDate.toLocaleDateString()}
+                </span>
+
+                <!-- Tags -->
+                <div class="tags">
+                  {post.data.tags.map((tag) => (
+                    <span class="tag">{tag}</span>
+                  ))}
+                </div>
+
+                <h3>{post.data.title}</h3>
+
+                <p>{post.data.description}</p>
+
+              </div>
+            </a>
+          ))}
+        </div>
+
+      </section>
+    )}
+  </main>
+</Layout>
 
 <style>
   main {
@@ -174,6 +173,7 @@ const [featuredPost, ...otherPosts] = recentPosts;
   .small-post:hover,
   .featured-post:hover {
     transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   }
 
   .small-post img {

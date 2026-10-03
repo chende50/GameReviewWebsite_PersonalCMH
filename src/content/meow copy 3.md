@@ -10,4 +10,16 @@ heroImage: "/src/assets/cat.jpg"
 
 # Let's talk cats
 
-meowzers!
+So this cat is super cute, see below!!!
+
+<figure>
+  <img
+    src="../public/images/meow.jpg"
+    alt="CAT"
+  />
+  <figcaption>
+    Look at that effing cat
+  </figcaption>
+</figure>
+
+But lets talk about more cats because I want to

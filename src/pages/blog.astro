@@ -2,6 +2,7 @@
 import Header from "../components/Header.astro";
 import { getCollection } from "astro:content";
 import BlogCard from "../components/BlogCard.astro";
+import Layout from "../layouts/layout.astro";
 
 const posts = await getCollection("blog");
 
@@ -10,21 +11,22 @@ const sortedPosts = posts.sort(
 );
 ---
 
-<Header />
-<div class="blog-grid">
-  {
-    sortedPosts.map((post) => (
-      <BlogCard
-        title={post.data.title}
-        description={post.data.description}
-        pubDate={post.data.pubDate}
-        tags={post.data.tags}
-        heroImage={post.data.heroImage}
-        slug={post.id}
-      />
-    ))
-  }
-</div>
+<Layout>
+  <div class="blog-grid">
+    {
+      sortedPosts.map((post) => (
+        <BlogCard
+          title={post.data.title}
+          description={post.data.description}
+          pubDate={post.data.pubDate}
+          tags={post.data.tags}
+          heroImage={post.data.heroImage}
+          slug={post.id}
+        />
+      ))
+    }
+  </div>
+</Layout>
 
 <style>
   h1 {

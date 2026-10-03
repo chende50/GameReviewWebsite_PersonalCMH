@@ -4,9 +4,10 @@ interface Props {
   description: string;
   pubDate: Date;
   tags: string[];
+  heroImage: string;
 }
 
-const { title, description, pubDate, tags } = Astro.props;
+const { title, description, pubDate, tags, heroImage } = Astro.props;
 
 const formattedDate = pubDate.toLocaleDateString("en-US", {
   year: "numeric",
@@ -18,14 +19,15 @@ const formattedDate = pubDate.toLocaleDateString("en-US", {
 <article class="blog-post">
   <!-- Post Header w/ Title, tags, return, description-->
   <header class="post-header">
-    <a href="/" class="back-link"> ← Back to Blog </a>
+    <!-- Hero Image -->
+    {heroImage && <img class="hero-image" src={heroImage} alt={title} />}
+
+    <h1>{title}</h1>
 
     <div class="post-tags">
       <!-- Maps tags from MD into a HTML element -->
       {tags.map((tag) => <span class="tag">{tag}</span>)}
     </div>
-
-    <h1>{title}</h1>
   </header>
 
   <div class="post-content">
@@ -41,16 +43,10 @@ const formattedDate = pubDate.toLocaleDateString("en-US", {
     padding: 3rem 1.5rem;
   }
 
+  /* Header */
   .post-header {
     text-align: center;
     margin-bottom: 3rem;
-  }
-
-  .back-link {
-    display: inline-block;
-    margin-bottom: 2rem;
-    color: #a94545;
-    text-decoration: none;
   }
 
   .post-tags {
@@ -59,6 +55,14 @@ const formattedDate = pubDate.toLocaleDateString("en-US", {
     gap: 0.5rem;
     flex-wrap: wrap;
     margin-bottom: 1rem;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+    margin-bottom: 3.5rem;
   }
 
   .tag {
@@ -90,6 +94,8 @@ const formattedDate = pubDate.toLocaleDateString("en-US", {
     font-size: 0.9rem;
     margin-top: 1.5rem;
   }
+
+  /* Post Content */
 
   .post-content {
     font-size: 1.05rem;
@@ -135,6 +141,28 @@ const formattedDate = pubDate.toLocaleDateString("en-US", {
     padding: 1rem;
     border-radius: 8px;
     overflow-x: auto;
+  }
+
+  /* Figures/Images */
+  .post-content :global(figure) {
+    width: 70%;
+    max-width: 550px;
+    margin: 2.5rem auto;
+  }
+
+  .post-content :global(figure img) {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+  }
+
+  .post-content :global(figcaption) {
+    color: #777;
+    font-size: 0.85rem;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 0.75rem;
   }
 
   @media (max-width: 600px) {
