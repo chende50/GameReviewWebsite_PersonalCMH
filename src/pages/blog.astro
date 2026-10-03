@@ -1,0 +1,43 @@
+---
+import Header from "../components/Header.astro";
+import { getCollection } from "astro:content";
+import BlogCard from "../components/BlogCard.astro";
+
+const posts = await getCollection("blog");
+
+const sortedPosts = posts.sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+---
+
+<Header />
+<div class="blog-grid">
+  {
+    sortedPosts.map((post) => (
+      <BlogCard
+        title={post.data.title}
+        description={post.data.description}
+        pubDate={post.data.pubDate}
+        tags={post.data.tags}
+        heroImage={post.data.heroImage}
+        slug={post.id}
+      />
+    ))
+  }
+</div>
+
+<style>
+  h1 {
+    text-align: center;
+    margin: 3rem 0 2rem;
+  }
+
+  .blog-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+</style>
