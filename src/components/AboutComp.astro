@@ -1,17 +1,149 @@
-<div class="main">
-  <h1>About Cae</h1>
-</div>
+<section class="about-section">
+  <div class="about-text">
+    <p class="eyebrow">GET TO KNOW ME</p>
+
+    <h1>About Me</h1>
+
+    <h2>Hello!</h2>
+
+    <p>
+      I'm Caeley, or Cae for short. Welcome to my blog for game reviews and
+      news!
+    </p>
+
+    <p>
+      From a young age I've always had a love for games, whether it was Pokemon
+      HeartGold on my DS or watching my dad play Mario Galaxy on the Wii, games
+      have always been a part of my life. Some of my favorite games include
+      Final Fantasy VII (original and the remake triology!), Persona 4 Golden,
+      and Final Fantasy XIV. Can you tell what my favorite gaming franchise is?
+    </p>
+
+    <p>
+      I'm currently pursuing my Bachelor's and Master's in Computer Science at
+      the University of North Carolina at Charlotte. It's through Charlotte that
+      I've learned how to make games, grown a greater appreciation for indie
+      games, and discovered my love for game journalism. This website is my
+      introduction to the world of game journalism, built from a place of
+      excitement yet fear at pursuing a genuine dream of mine.
+    </p>
+
+    <p>
+      Outside of games, I'm an avid collector of many things including: Monster
+      High dolls, physical media, game & anime merchandise, and plushies. I
+      spend free time at home with my boyfriend and lovely dog, Nina Louise, or
+      out and about with friends.
+    </p>
+
+    <p>
+      Feel free to contact me:
+      <ul>
+        <li>
+          <a href="mailto:caeleymhenderson@gmail.com">Email</a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/caeleyh?stkn=azNtMXQ3eTltdWd6&utm_source=qr"
+            >Instagram</a
+          >
+        </li>
+      </ul>
+    </p>
+  </div>
+
+  <div class="about-image">
+    <img src="/images/about/cae_picture.png" alt="A photo of me" />
+  </div>
+</section>
 
 <style>
-  .main {
-    background-color: rgb(188, 35, 35);
-    max-width: 80%;
+  .about-section {
+    max-width: 1100px;
     margin: 0 auto;
-    margin-top: 3rem;
-    border-radius: 8px;
+    padding: 4rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
   }
 
-  h1 {
-    text-align: center;
+  .about-text {
+    flex: 1;
+    max-width: 600px;
+  }
+  .eyebrow {
+    color: #a94545;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    margin: 0 0 0.75rem;
+  }
+
+  a {
+    color: #8c3838;
+  }
+
+  .about-text h1 {
+    color: #292929;
+    font-size: clamp(2.75rem, 6vw, 4.5rem);
+    line-height: 1.05;
+    margin: 0 0 2rem;
+  }
+
+  .about-text h2 {
+    color: #8c3838;
+    font-size: 1.8rem;
+    margin: 0 0 1rem;
+  }
+
+  .about-text p:not(.eyebrow) {
+    color: #555;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin: 0 0 1.25rem;
+  }
+
+  .about-image {
+    position: relative;
+    flex: 0 0 350px;
+    width: 550px;
+    padding: 10px;
+    background: #f3e1e1;
+    border-radius: 20px;
+    box-sizing: border-box;
+  }
+
+  .about-image::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    right: -12px;
+    width: 100%;
+    height: 100%;
+    background: #a94545;
+    border-radius: 20px;
+    z-index: -1;
+  }
+
+  .about-image img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    height: 500px;
+    display: block;
+    object-fit: cover;
+    border-radius: 14px;
+  }
+
+  @media (max-width: 750px) {
+    .about-section {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+      padding: 3rem 1rem;
+    }
+
+    .about-image {
+      max-width: 500px;
+      margin: 0 auto;
+    }
   }
 </style>
