@@ -7,7 +7,7 @@ interface Props {
   heroImage: string;
 }
 
-const { title, description, pubDate, tags, heroImage } = Astro.props;
+const { title, pubDate, tags, heroImage } = Astro.props;
 
 const formattedDate = pubDate.toLocaleDateString("en-US", {
   year: "numeric",
@@ -17,7 +17,7 @@ const formattedDate = pubDate.toLocaleDateString("en-US", {
 ---
 
 <article class="blog-post">
-  <!-- Post Header w/ Title, tags, return, description-->
+  <!-- Post Header w/ Title, tags, description-->
   <header class="post-header">
     <!-- Hero Image -->
     {heroImage && <img class="hero-image" src={heroImage} alt={title} />}
@@ -28,6 +28,7 @@ const formattedDate = pubDate.toLocaleDateString("en-US", {
       <!-- Maps tags from MD into a HTML element -->
       {tags.map((tag) => <span class="tag">{tag}</span>)}
     </div>
+    <p>{formattedDate}</p>
   </header>
 
   <div class="post-content">
@@ -93,6 +94,12 @@ const formattedDate = pubDate.toLocaleDateString("en-US", {
     color: #777;
     font-size: 0.9rem;
     margin-top: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #333;
   }
 
   /* Post Content */
