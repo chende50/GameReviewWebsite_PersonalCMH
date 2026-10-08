@@ -14,7 +14,7 @@ So this cat is super cute, see below!!!
 
 <figure>
   <img
-    src="/image/embedded/meow.jpg"
+    src="/images/embedded/meow.jpg"
     alt="CAT"
   />
   <figcaption>
