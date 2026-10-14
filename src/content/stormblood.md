@@ -3,8 +3,9 @@ title: "Final Fantasy XIV: Stormblood"
 description: "XIV's second expansion shifts to a rebellion story that doesn't quite hold a torch to it's predecessor, earning a six out of ten from me."
 pubDate: 2024-02-12
 tags:
-  - MMORPG
   - Final Fantasy
+  - MMORPG
+  - Fantasy
   - 6/10
 heroImage: "/images/hero/stormbloodhero.png"
 ---
