@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro"
 import { getCollection } from "astro:content";
-import Header from "../components/Header.astro";
 
 const posts = await getCollection("blog");
 
@@ -39,7 +38,12 @@ const [featuredPost, ...otherPosts] = recentPosts;
           <div class="post-overlay">
 
             <span class="date">
-              {featuredPost.data.pubDate.toLocaleDateString()}
+              {featuredPost.data.pubDate.toLocaleDateString("en-US", {
+                    timeZone: 'UTC',
+                    year: "numeric",
+                    month: "short",
+                    day: "numeric"
+                  })}
             </span>
 
             <!-- Tags -->
@@ -73,7 +77,12 @@ const [featuredPost, ...otherPosts] = recentPosts;
               <div class="small-post-info">
 
                 <span class="date">
-                  {post.data.pubDate.toLocaleDateString()}
+                  {post.data.pubDate.toLocaleDateString("en-US", {
+                    timeZone: 'UTC',
+                    year: "numeric",
+                    month: "short",
+                    day: "numeric"
+                  })}
                 </span>
 
                 <!-- Tags -->
@@ -146,6 +155,7 @@ const [featuredPost, ...otherPosts] = recentPosts;
   .post-overlay h2 {
     font-size: 32px;
     margin: 8px 0;
+    font-family: "Oswald", sans-serif;
   }
 
   .post-overlay p {
@@ -230,6 +240,7 @@ const [featuredPost, ...otherPosts] = recentPosts;
   .small-post-info h3 {
     margin: 6px 0;
     font-size: 20px;
+    font-family: "Oswald", sans-serif;
   }
 
   .small-post-info p {

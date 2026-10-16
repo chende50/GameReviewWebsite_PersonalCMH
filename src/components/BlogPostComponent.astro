@@ -10,6 +10,7 @@ interface Props {
 const { title, pubDate, tags, heroImage } = Astro.props;
 
 const formattedDate = pubDate.toLocaleDateString("en-US", {
+  timeZone: 'UTC',
   year: "numeric",
   month: "long",
   day: "numeric",

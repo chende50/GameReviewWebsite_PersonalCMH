@@ -39,53 +39,80 @@
 <style>
   header {
     background-color: rgb(188, 35, 35);
-    top: 0;
-    max-width: 100%;
-    padding: 1rem;
-    padding-bottom: 0;
-    padding-top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.75rem max(2rem, calc((100% - 1100px) / 2));
     display: flex;
-    text-align: center;
-    position: sticky;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
     margin-bottom: 1rem;
   }
 
   .title {
-    justify-content: left;
-    align-items: left;
-    padding-left: 2rem;
+    text-align: left;
+    flex-shrink: 0;
+    font-family: 'Pixelify Sans', sans-serif;
   }
 
   .webtitle {
-    padding-bottom: 0;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
   }
 
   .tagline {
-    padding-top: 0;
-    margin-top: 0;
-    grid-row-start: 2;
+    margin: 0.25rem 0 0;
+    padding: 0;
+  }
+
+  .title-link {
+    padding: 0;
+    color: black;
+    text-decoration: none;
   }
 
   nav {
-    justify-content: right;
-    align-items: right;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
   }
 
-  a {
-    padding: 1rem;
+  nav a {
+    padding: 0.75rem;
     color: black;
     text-decoration: none;
     font-weight: bold;
+    white-space: nowrap;
+    font-family: 'Pixelify Sans', sans-serif;
   }
 
-  a:hover {
+  nav a:hover {
     color: white;
   }
 
   .title-link:hover {
     color: black;
+  }
+
+  @media (max-width: 700px) {
+    header {
+      padding: 0.75rem 1rem;
+      flex-wrap: wrap;
+    }
+
+    .webtitle {
+      font-size: 1.4rem;
+    }
+
+    nav {
+      gap: 0;
+    }
+
+    nav a {
+      padding: 0.5rem;
+    }
   }
 </style>
