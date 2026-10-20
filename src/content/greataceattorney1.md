@@ -1,0 +1,13 @@
+---
+title: "The Great Ace Attorney: Adventures"
+description: "The Great Ace Attorney just doesn't manage to live up to the franchise that inspired it, feeling slow and unimpressive."
+pubDate: 2024-04-29
+tags:
+  - Ace Attorney
+  - Visual Novel
+  - Mystery
+  - 6.5/10
+heroImage: "/images/hero/greataceattorneyadventure.jpg"
+---
+
+Honestly at the halfway point of this game I was skeptical of how well it would do in my final rankings, expecting something as low as a three or 4. The game feels just alright for almost its entirety but just manages to save itself at the very end. The first case, our tutorial case, is mind numbingly long for reasons that are extremely unbeknownst to me. At the very least, I enjoyed the bonds it created between Kazuma and Ryunosuke, which will eventually pay off later in the game. The second case also felt fairly long for what it was but remains a rather unique case, containing only an investigation portion rather than a full trial. The resolution of the case definitely helps to propel the story, which is exactly what the game needs. My first impressions of the third case felt unimpressive but at the end I realized that it serves well to set up conflict for Ryunosuke. Nonetheless, it results in being a rather unique case in itself. Sadly, the fourth case felt like I was waist deep in mud, trudging through. Another unimpressive case that reeks of filler. The game completely saves itself with the final case and in the final cutscenes! The case is directly interwined with the second one in the game, something that I love when Ace Attorney does it. The finale of the game provides so much more importance to some of its previous episodes, which feels rewarding but doesn't take away that some of these were just not fun to play. Regardlesss, the twists felt great and it leads to a good conclusion for the game. Overall, this game has some really solid characters and I'm enjoying the relationships that already exist and are still forming between them. The gameplay mechanics are more in depth than the original trilogy and makes the game feel all the more interactive. It results in a pretty good cliffhanger to end off on, which serves to remind me that this game is the first in a duology. Some of the content in the game gains a lot of meaning when you remember it likely serves as partial set up for the second game. This fact makes it hard to be so harsh on this game, I just have yet to see the full pay off. It served its purpose in the end which is to ramp up my excitement to play the next game, that is hopefully far more enjoyable!
