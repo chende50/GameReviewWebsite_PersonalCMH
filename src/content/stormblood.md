@@ -1,6 +1,6 @@
 ---
 title: "Final Fantasy XIV: Stormblood"
-description: "XIV's second expansion shifts to a rebellion story that doesn't quite hold a torch to it's predecessor, earning a six out of ten from me."
+description: "XIV's second expansion shifts to a rebellion story that doesn't quite hold a torch to the expansion before it, falling flat on half its story and major characters."
 pubDate: 2024-02-12
 tags:
   - Final Fantasy

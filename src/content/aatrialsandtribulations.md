@@ -1,6 +1,6 @@
 ---
 title: "Phoenix Wright: Ace Attorney - Trials and Tribulations"
-description: "The third installment of the Ace Attorney series blows it away with rich mysteries and characters that solidifies its place in gaming history"
+description: "The third installment of the Ace Attorney series blows it away with rich mysteries and characters that solidifies its place in gaming history."
 pubDate: 2024-02-26
 tags:
   - Ace Attorney

@@ -1,6 +1,6 @@
 ---
 title: "The Great Ace Attorney: Adventures"
-description: "The Great Ace Attorney just doesn't manage to live up to the franchise that inspired it, feeling slow and unimpressive."
+description: "The Great Ace Attorney brings the Ace Attorney franchise 1900's England for the first time. Yet it just doesn't manage to live up to the franchise that inspired it, feeling slow and unimpressive."
 pubDate: 2024-04-29
 tags:
   - Ace Attorney
