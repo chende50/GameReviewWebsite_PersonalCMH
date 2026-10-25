@@ -1,5 +1,5 @@
 ---
-title: "5 Highlights from Steam Next Fest"
+title: "4 Indie Highlights from Steam Next Fest"
 description: "Steam's Next Fest is here! Three times a year Steam gives a spotlight to indie games with demos, allowing them to reach more people and show off their talents. Come see what stood out to me, including There are No Ghosts at the Grand and Demi and the Fractured Dream."
 pubDate: 2026-10-24
 tags:
