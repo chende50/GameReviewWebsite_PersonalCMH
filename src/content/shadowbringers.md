@@ -1,7 +1,7 @@
 ---
 title: "Final Fantasy XIV: Shadowbringers"
 description: "XIV's Shadowbringers sends the Warrior of Light into a brand new world full of exciting new conflicts, characters, and combat, keeping players enraptured from start to finish."
-pubDate: 2024-05-13
+pubDate: 2024-04-29
 tags:
   - Final Fantasy
   - MMORPG
