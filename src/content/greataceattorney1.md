@@ -1,7 +1,7 @@
 ---
 title: "The Great Ace Attorney: Adventures"
 description: "The Great Ace Attorney brings the Ace Attorney franchise 1900's England for the first time. Yet it just doesn't manage to live up to the franchise that inspired it, feeling slow and unimpressive."
-pubDate: 2024-04-29
+pubDate: 2024-03-30
 tags:
   - Ace Attorney
   - Visual Novel

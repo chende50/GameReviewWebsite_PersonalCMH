@@ -1,0 +1,17 @@
+---
+title: "Final Fantasy XIV: Endwalker"
+description: "Just when I thought Final Fantasy XIV couldn't get any better Endwalker dives in and sweeps me off my feet, pulling me into a whirlwind of new lore, compelling characters, and suffocatingly high stakes."
+pubDate: 2024-05-30
+tags:
+  - Final Fantasy
+  - MMORPG
+  - Fantasy
+  - 10/10
+heroImage: "/images/hero/endwalkerhero.jpg"
+---
+
+I'm not entirely sure words can describe how I feel about this expansion, but I can sure try! I feel as though my haste to get through the expansion speaks volumes, completing one of the longest expansion in the game in just over a week. This expansion is the perfect finale to every single expansion that lies before it, there was no better way for this story to end, and begin again. The overall story flows perfectly, with very few moments of "low" energy. Each quest line serves greatly to the overarching story, my favorite being the time the Warrior of Light spends with the ancients. To be there with characters that were once your enemies or allies before they even knew of you, creates strong emotions and the completely separate world is so easy to fall in love with. The area designs overall are phenomenal, each one is so different from the last and has its own beauties within. The characters, both new and old, are so incredibly written, a factor of media that means the most to me. I've felt this in the previous expansions but it seems to shine well here, each close ally of the player is their individual person and they are all so different from one another. Such as the ways they talk to their allies, the player, and the choices they make during the expansion. The new characters feel this way as well and have great development across the expansion's story. My only problems with characters falls on the twin's father, who has a distinct moment that I felt didn't align with his overall writing as a character, especially later in the expansion. 
+
+The music in Endwalker utterly smashes the music from all the expansions before it. And I mean SMASHES. Every song is so perfect for each moment or area, and is used in a way that truly amplifies the events that unfold. The ending of the expansion leaves so much to look forward to without making anything feel incomplete, which solidifies the end of the current story arc but still leaves much to look forward to in the next expansion. I was seriously just blown away with this one. That's the only way I can put it. 
+
+Following up to talk about the post-Endwalker content, the story overall didn't have me as roped in but its rather hard to follow up the expansion that Endwalker is. The existing characters were still as great as ever and the newly introduced characters were very enjoyable. Zero's character development across the post-Endwalker quests was really well done and you could slowly see her begin to make more sense of human feelings such as trust. The dungeons and trials were also fantastic, some being among my favorite in the game so far. The  quests building up to Dawntrail are short but they do a great job of ramping up the players hype for the coming expansion and feeds into the spontaneous nature of everything. The side content alongside post-Endwalker, specifically the raids, were really awesome, getting to spend more time in Elpis and meet more of our former enemies was just what I wanted. Not to mention, getting to learn more of the Twelve. It was the perfect time to expand upon their existence after both Hydaelyn and Zodiark's defeat. 
