@@ -11,7 +11,7 @@ heroImage: "/images/hero/steamnextfest.jpg"
 # There are No Ghosts at the Grand
 <figure>
   <img
-    src="/images/embedded/noghostsatthegrand.jpg"
+    src="/images/embedded/steamnextfest/noghostsatthegrand.jpg"
     alt="Image of gameplay for There are No Ghosts at the Grand."
   />
 </figure>
@@ -25,7 +25,7 @@ Play the full release of *There are No Ghosts at the Grand* in December this yea
 # Probably Stolen
 <figure>
   <img
-    src="/images/embedded/probablystolen.jpg"
+    src="/images/embedded/steamnextfest/probablystolen.jpg"
     alt="Image of gameplay for Probably Stolen."
   />
 </figure>
@@ -39,7 +39,7 @@ Play the full release of *Probably Stolen* on October 28th this year and wishlis
 # Demi and the Fractured Dream
 <figure>
   <img
-    src="/images/embedded/demiandthefractureddream.jpg"
+    src="/images/embedded/steamnextfest/demiandthefractureddream.jpg"
     alt="Image of gameplay for Demi and the Fractured Dream."
   />
 </figure>
@@ -53,7 +53,7 @@ Play the full release of Demi and the Fractured Dream in February of next year a
 # Apple Crumble
 <figure>
   <img
-    src="/images/embedded/applecrumble.png"
+    src="/images/embedded/steamnextfest/applecrumble.png"
     alt="Image of gameplay for Apple Crumble."
   />
 </figure>
