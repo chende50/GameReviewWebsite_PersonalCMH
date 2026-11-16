@@ -1,7 +1,7 @@
 ---
 title: "Top 10 Cats in Video Games"
 description: "MEOWMEOWMD"
-pubDate: 2026-10-02
+pubDate: 
 tags:
   - Gaming
   - Cats
